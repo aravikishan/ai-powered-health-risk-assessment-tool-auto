@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>AI-Powered Health Risk Assessment Tool</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/profile">Profile</a>
+        <a href="/assessment">Assessment</a>
+        <a href="/api-docs">API Docs</a>
+        <a href="/about">About</a>
+    </nav>
+    <main class="container">
+        <h1 class="mt-5">User Profile</h1>
+        <form id="profile-form">
+            <div class="mb-3">
+                <label for="age" class="form-label">Age</label>
+                <input type="number" class="form-control" id="age" name="age" required>
+            </div>
+            <div class="mb-3">
+                <label for="lifestyle" class="form-label">Lifestyle</label>
+                <input type="text" class="form-control" id="lifestyle" name="lifestyle" required>
+            </div>
+            <div class="mb-3">
+                <label for="family_history" class="form-label">Family History</label>
+                <input type="text" class="form-control" id="family_history" name="family_history" required>
+            </div>
+            <div class="mb-3">
+                <label for="health_metrics" class="form-label">Health Metrics (JSON format)</label>
+                <textarea class="form-control" id="health_metrics" name="health_metrics" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 Health Assessment Tool</p>
+    </footer>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

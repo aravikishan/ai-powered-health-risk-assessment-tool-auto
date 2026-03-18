@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>AI-Powered Health Risk Assessment Tool</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/profile">Profile</a>
+        <a href="/assessment">Assessment</a>
+        <a href="/api-docs">API Docs</a>
+        <a href="/about">About</a>
+    </nav>
+    <main class="container">
+        <h1 class="mt-5">API Documentation</h1>
+        <p>Welcome to the API documentation for the AI-Powered Health Risk Assessment Tool.</p>
+        <ul>
+            <li><strong>GET /api/profiles</strong>: Retrieves all user profiles.</li>
+            <li><strong>POST /api/profiles</strong>: Creates a new user profile.</li>
+            <li><strong>GET /api/assessments/{profile_id}</strong>: Returns a health risk assessment for a specific user profile.</li>
+            <li><strong>POST /api/assessments</strong>: Generates a new health risk assessment based on provided data.</li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2023 Health Assessment Tool</p>
+    </footer>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
